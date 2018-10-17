@@ -1,0 +1,15 @@
+---
+authors: []
+description: 'Easily download, build, install, upgrade, and uninstall Python packages'
+installtype: ops
+keywords:
+  - setuptools
+  - python
+  - 'package manager'
+package: setuptools
+source: url
+type: application
+unzipped: setuptools-$version
+url: https://pypi.python.org/packages/source/s/setuptools/setuptools-$version.tar.gz
+version: '2.1'
+website: https://pypi.python.org/pypi/setuptools

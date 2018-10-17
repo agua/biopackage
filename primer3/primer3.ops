@@ -1,0 +1,17 @@
+---
+authors: []
+description: 'Broad GATK Best Practices DNA-Seq workflow'
+installtype: ops
+keywords:
+  - 'Broad Best Practices'
+  - DNA-Seq
+  - primer3
+  - NGS
+  - GATK
+  - samtools
+licensefile: LICENSE
+package: primer3
+readmefile: README
+unzipped: primer3-$version
+url: http://sourceforge.net/projects/primer3/files/primer3/$version/primer3-src-$version.tar.gz
+version: 2.3.6

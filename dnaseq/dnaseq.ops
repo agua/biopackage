@@ -1,0 +1,51 @@
+---
+authors: []
+dependencies:
+  -
+    package: java
+    version: 1.7.0_51
+  -
+    package: samtools
+    version: 0.1.19
+  -
+    package: bamtools
+    version: v2.3.0
+  -
+    package: picard
+    version: 2.1.1
+  -
+    package: gatk
+    version: 3.3-0
+  -
+    package: fastqc
+    version: 0.11.4
+  -
+    package: vcflib
+    version: v1.0.0-rc0
+    treeish: d453d91
+  -
+    package: vcftools
+    version: v0.1.14
+description: 'Broad GATK Best Practices DNA-Seq workflow'
+hubtype: bitbucket
+installtype: ops
+keywords:
+  - 'Broad Best Practices'
+  - DNA-Seq
+  - DNASeq
+  - NGS
+  - GATK
+  - samtools
+licensefile: LICENSE
+owner: stuartpyoung
+package: dnaseq
+privacy: public
+publication: {}
+readmefile: README
+repository: dnaseq
+resources: {}
+source: git
+type: application
+url: git@github.com:syoung/dnaseq.git
+website: https://bitbucket.org/stuartpyoung/dnaseq/src
+version: 0.0.1

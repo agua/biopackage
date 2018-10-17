@@ -1,0 +1,20 @@
+---
+authors: []
+build: ''
+description: 'Genetic variant annotation and effect prediction toolbox'
+installtype: ops
+keywords:
+  - variant
+  - 'effect prediction'
+  - snpeff
+licensefile: LICENSE
+name: snpeff
+parameterfile: snpeff.params
+publication: {}
+readmefile: README
+source: url
+type: http
+unzipped: snpEff
+url: 'http://sourceforge.net/projects/snpeff/files/snpEff_v$version _core.zip'
+version: 3_5
+website: http://http://snpeff.sourceforge.net

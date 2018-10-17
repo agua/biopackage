@@ -1,0 +1,896 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+
+@media print {
+  body .markdown-body {
+    padding: 0;
+    border: none;
+  }
+}
+</style><title>README</title></head><body><article class="markdown-body"><p>README</p>
+<h1>
+<a id="user-content-biopackage" class="anchor" href="#biopackage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>biopackage</h1>
+<h2>
+<a id="user-content-0-summary" class="anchor" href="#0-summary" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>0. SUMMARY</h2>
+<p>Biopackage is used by the open-source package installer Biorepo to automatically install Linux-supported packages as a non-root user. Biorepo can also install workflows that can be run on Agua, an open-source workflow platform that supports local, HPC and cloud workflows.</p>
+<h2>
+<a id="user-content-1-introduction" class="anchor" href="#1-introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1. INTRODUCTION</h2>
+<p>The Biopackage repository is used by package installer Biorepo (<a href="http://www.github.com/agua/biorepo">www.github.com/agua/biorepo</a>) to automatically install packages and workflows. Biopackage is a collection of application-specific installation scripts that Biorepo uses to carry out installations and test the correct functioning of the installed packages. Installed executables can be run on the Linux command line or using the open-source workflow platform Agua (<a href="http://www.github.com/agua/agua">www.github.com/agua/agua</a>).</p>
+<p>If you don't find the package you need in Biopackage, you can submit a feature request to:</p>
+<p><a href="mailto:aguadev@gmail.com">aguadev@gmail.com</a></p>
+<h2>
+<a id="user-content-2-installation" class="anchor" href="#2-installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>2. INSTALLATION</h2>
+<h3>
+<a id="user-content-hardware-requirements" class="anchor" href="#hardware-requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardware requirements</h3>
+<p>Memory   512MB RAM
+Storage  230 MB</p>
+<p>Please note that you may need several GBs of storage to house the application files you install using the biorepo.</p>
+<p>Note: To determine how much disk space you have, use the 'df -ah' command.</p>
+<h3>
+<a id="user-content-operating-system" class="anchor" href="#operating-system" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Operating system</h3>
+<p>Biorepo supports the following operating systems:</p>
+<p>Ubuntu 16.04
+Centos 7.3</p>
+<p>It should also run on other Debian or RHEL/Fedora/CentOS systems.</p>
+<h2>
+<a id="user-content-software-dependencies" class="anchor" href="#software-dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Software dependencies</h2>
+<p>Required software packages:</p>
+<p><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" rel="nofollow">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a><br>
+Git 1.6+</p>
+<p><a href="http://perl.org" rel="nofollow">http://perl.org</a><br>
+Perl 5.10+</p>
+<p>You can verify the installed versions of these packages:</p>
+<div class="highlight highlight-source-shell"><pre>perl --version
+git --version</pre></div>
+<p>To install these packages on Ubuntu/Debian:</p>
+<div class="highlight highlight-source-shell"><pre>sudo apt-get install -y git
+sudo apt-get install -y cpanminus</pre></div>
+<p>To install them on RHEL/Fedora/CentOS:</p>
+<div class="highlight highlight-source-shell"><pre>sudo yum install perl
+sudo yum install git</pre></div>
+<h2>
+<a id="user-content-alternative-a-install-with-biorepo" class="anchor" href="#alternative-a-install-with-biorepo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alternative A: Install with Biorepo</h2>
+<p>The standard way to install Biopackage is by installing Biorepo, which installs Biopackage by default:</p>
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/agua/biorepo
+<span class="pl-c1">cd</span> biorepo
+./install.sh</pre></div>
+<p>This will download and configure Biorepo, including downloading the biopackage repository to Biorepo's base directory.</p>
+<p>Biorepo supports the following subcommands:</p>
+<div class="highlight highlight-source-shell"><pre>biorepo list                     <span class="pl-c"><span class="pl-c">#</span> List all available and installed packages</span>
+biorepo status                   <span class="pl-c"><span class="pl-c">#</span> List all installed packages</span>
+biorepo update                   <span class="pl-c"><span class="pl-c">#</span> Update Biorepo</span>
+biorepo install <span class="pl-k">&lt;</span>PACKAGE<span class="pl-k">&gt;</span>        <span class="pl-c"><span class="pl-c">#</span> Install package &lt;PACKAGE&gt;</span>
+biorepo install <span class="pl-k">&lt;</span>PACKAGE<span class="pl-k">&gt;</span> -v 1.0 <span class="pl-c"><span class="pl-c">#</span> Install package &lt;PACKAGE&gt;, version 1.0</span>
+biorepo --help                   <span class="pl-c"><span class="pl-c">#</span> Print usage information</span></pre></div>
+<p>The following options are supported:</p>
+<p>--version</p>
+<p>For more details, see:</p>
+<p><a href="https://github.com/agua/biorepo">https://github.com/agua/biorepo</a></p>
+<h3>
+<a id="user-content-alternative-b-install-in-isolation" class="anchor" href="#alternative-b-install-in-isolation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Alternative B: Install in isolation</h3>
+<p>If you simply wish to review the Biopackage installation scripts:</p>
+<div class="highlight highlight-source-shell"><pre>git clone https://github.com/agua/biopackage
+<span class="pl-c1">cd</span> biopackage</pre></div>
+<h2>
+<a id="user-content-3-how-it-works" class="anchor" href="#3-how-it-works" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3. HOW IT WORKS</h2>
+<p>Each package folder in Biopackage contains a namesake .ops YAML-format file which defines the installation procedure for the package, e.g.:</p>
+<p>circos/circos.ops</p>
+<h3>
+<a id="user-content-default-install" class="anchor" href="#default-install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Default install</h3>
+<p>Biorepo first reads the .ops file and by then, by default, executes its own 'doInstall' function which uses specific field values of the .ops file to guide the installation procedure.</p>
+<p>Default package installation involves the following steps:</p>
+<ul>
+<li>Install dependencies</li>
+<li>Download the package from a remote URL to folder INSTALLDIR/PACKAGE</li>
+<li>Install the package to location INSTALLDIR/PACKAGE/VERSION</li>
+</ul>
+<p>The INSTALLDIR/PACKAGE/VERSION values are defined in the Biorepo configuration file:</p>
+<p>biorepo/conf/config.yml</p>
+<p>... and by user inputs as follows:</p>
+<p>INSTALLDIR (required) : The base installation directory defined by the 'installdir' field in the Biorepo configuration file<br>
+PACKAGE (required)    : The user-provided package name in install command<br>
+VERSION (optional)    : The package '--version' argument in the install  command (DEFAULT: 'version' field in Biorepo configuration file or the latest tag if 'version' is missing and the URL is a Git repository)</p>
+<h3>
+<a id="user-content-custom-install-with-sdk" class="anchor" href="#custom-install-with-sdk" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom install with SDK</h3>
+<p>For custom installs, a .pm file is also present in the package directory, e.g.:</p>
+<p>circos/circos.pm</p>
+<p>Instead of calling its own 'doInstall' method, Biorepo will load the circos.pm file dynamically and call its 'doInstall' method. The circos.pm file will have full access to Biorepo's API methods (see below).</p>
+<h3>
+<a id="user-content-custom-install-without-sdk" class="anchor" href="#custom-install-without-sdk" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom install without SDK</h3>
+<p>If the .ops file contains a valid "script" field, instead of calling its 'doInstall' method, Biorepo will execute the field value as a system command with the location of the .ops file as the sole argument. E.g., add this line to circos/circos.ops:</p>
+<pre><code>script: "python installer.py" 
+</code></pre>
+<p>... to run the following install command:</p>
+<div class="highlight highlight-source-shell"><pre>python installer.py circos/circos.ops</pre></div>
+<h3>
+<a id="user-content-open-package-schema-ops" class="anchor" href="#open-package-schema-ops" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Open Package Schema (.ops)</h3>
+<p>The .ops suffix stands for '<em>Open Package Schema</em>', which defines a standard way for describing the installation process of a package. The required and optional fields for .ops files are as follows:</p>
+<p>dependencies     : List of hashes containing "package" and "version" keypairs
+url: remote location of downloaded file
+installtype      : A comma-separated string with format</p>
+<pre><code>&lt;(download|zip|git)&gt;[,config|make|perlmake|install|confirm]
+</code></pre>
+<p>... where '&lt;*&gt; arguments are required, '|' are alternatives and '[*]' arguments are optional and the supported arguments are:</p>
+<pre><code>+ download   : Download file defined by the "url" field
++ zip        : Download from "url" and unzip tgz|tar.gz|bz2|zip file 
++ git        : Clone "url" using Git and optionally checkout user-specified version (DEFAULT: checkout latest tag)
++ configure  : Run '/.configure --prefix=&lt;INSTALLDIR&gt;/&lt;PACKAGE&gt;/&lt;VERSION&gt;' 
++ make       : Run 'make' and 'make install' 
++ perlmake   : Run 'perl Makefile.PL'
++ confirm    : Run 'perl t/test.t' to test the installation
+</code></pre>
+<p><em>Example .ops file entries:</em></p>
+<p>Download a zipfile, then run ./configure, 'make' and 'make install':</p>
+<pre><code>installtype: "zip,configure,make"
+</code></pre>
+<p>Download version '1.0.0' from a remote Git repo:</p>
+<pre><code>version: "1.0.0"
+installtype: "git"
+</code></pre>
+<h2>
+<a id="user-content-4-how-to-add-your-own-packages" class="anchor" href="#4-how-to-add-your-own-packages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. HOW TO ADD YOUR OWN PACKAGES</h2>
+<p>You can use Biorepository to automate the installation of your own package or a third party package. You can use any software programming language to write your installation script; Biorepo will run your installation and test scripts, report the outcome (success|error) and store your installation information. You may prefer to create a *.pm Perl file to leverage Biorepo's Perl SDK (see Custom install with SDK above).</p>
+<p>The basic development process is as follows:</p>
+<h3>
+<a id="user-content-install-biopackage-with-biorepo" class="anchor" href="#install-biopackage-with-biorepo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install Biopackage with Biorepo</h3>
+<p>Create a new directory with the same name as the package you want to install, e.g.:</p>
+<div class="highlight highlight-source-shell"><pre>mkdir myapp
+<span class="pl-c1">cd</span> myapp</pre></div>
+<h3>
+<a id="user-content-create-ops-file" class="anchor" href="#create-ops-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create .ops file</h3>
+<p>Create a skeleton .ops file with optional '--version' (DEFAULT: 0.0.1) and edit as desired:</p>
+<div class="highlight highlight-source-shell"><pre>biorepo skel myapp --version 1.0 
+emacs -nw myapp.ops</pre></div>
+<h3>
+<a id="user-content-private-repos" class="anchor" href="#private-repos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Private repos</h3>
+<p>By default, installed packages are public on Github. To install from a private repository, add the following lines to the .ops file:</p>
+<pre><code>privacy: private
+login: &lt;GITHUB_USERNAME&gt;
+</code></pre>
+<p>And also ensure that your GitHub-registered SSH private key is accessible and has the correct permissions, e.g.:</p>
+<p>chmod 400 ~/.ssh/id_rsa</p>
+<h3>
+<a id="user-content-create-installer" class="anchor" href="#create-installer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create installer</h3>
+<p>Create file myapp.pm with an editor:</p>
+<div class="highlight highlight-source-shell"><pre>emacs -nw myapp.pm</pre></div>
+<p>Alternately, create your own
+Create a test file:</p>
+<p>mkdir t
+emacs -nw t/test.t</p>
+<p>You can then use Biorepo to install your package:</p>
+<p>biorepo install myapp</p>
+<h2>
+<a id="user-content-4-how-to-contribute" class="anchor" href="#4-how-to-contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4. HOW TO CONTRIBUTE</h2>
+<p>All contributions to Biopackage will be acknowledge in the README.md file. You can contribute your custom installation scripts to Biopackage as follows:</p>
+<h3>
+<a id="user-content-fork-the-repo" class="anchor" href="#fork-the-repo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fork the repo</h3>
+<p>Create your own fork of Biopackage on Github:</p>
+<p><a href="https://github.com/agua/biopackage">https://github.com/agua/biopackage</a></p>
+<h3>
+<a id="user-content-create-your-installer" class="anchor" href="#create-your-installer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Create your installer</h3>
+<p>Create a custom install (with or without SDK) for your package or a third party package, including tests. Push your code to your forked copy of Biopackage.</p>
+<h3>
+<a id="user-content-submit-pull-request" class="anchor" href="#submit-pull-request" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Submit pull request</h3>
+<p>Ensure that all tests pass before sending a pull request on GitHub.</p>
+</article></body></html>

@@ -1,0 +1,23 @@
+---
+authors:
+  - 'Krzywinski, M.'
+  - 'Steven L Salzberg'
+description: 'Attractive circular visualization of data for exploring relationships between objects or positions'
+installtype: ops
+keywords:
+  - graphing
+  - visualization
+  - circos
+licensefile: LICENSE
+package: circos
+publication:
+  journal: 'Genome Res (2009) 19:1639-1645 '
+  title: 'Circos: an Information Aesthetic for Comparative Genomics'
+  year: '2009'
+readmefile: README
+source: url
+type: application
+unzipped: circos-$version
+url: http://circos.ca/distribution/circos-$version.tgz
+version: '0.64'
+website: http://circos.ca

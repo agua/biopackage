@@ -1,0 +1,23 @@
+---
+authors:
+  - 'Li H'
+  - 'Durbin R'
+build: ''
+description: 'Map low-divergent sequences against a large reference genome'
+installtype: zip,configure
+keywords:
+  - Burrows-Wheeler
+  - alignment
+  - bwa
+licensefile: LICENSE
+package: bwa
+publication:
+  journal: 'Bioinformatics, 25:1754-60'
+  title: 'TopHat: discovering splice junctions with RNA-Seq'
+  year: '2009'
+readmefile: README
+source: url
+type: application
+url: http://sourceforge.net/projects/bio-bwa/files/bwa-$version.tar.bz2
+version: 0.7.6a
+website: http://bio-bwa.sourceforge.net/

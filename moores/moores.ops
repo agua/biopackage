@@ -1,0 +1,26 @@
+---
+authors:
+  - 'Carter Hannah'
+  - 'Young Stuart'
+description: 'Analysis of unmapped viral reads'
+hubtype: bitbucket
+installtype: ops
+keywords:
+  - unmapped
+  - virus
+  - TCGA
+  - NGS
+  - GTFuse
+  - samtools
+licensefile: LICENSE
+owner: annaisystems
+package: moores
+privacy: public
+publication: {}
+readmefile: README
+repository: moores
+resources: {}
+source: git
+type: application
+url: git@bitbucket.org:annaisystems/moores.git
+website: https://bitbucket.org/annaisystems/moores/src

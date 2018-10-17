@@ -1,0 +1,20 @@
+---
+authors:
+  - 'Deacon Sweeney'
+description: 'A Python library containing tools for managing AWS S3 data'
+hubtype: bitbucket
+installtype: ops
+keywords:
+  - s3
+  - python
+  - upload
+  - download
+  - 'file transfer'
+owner: stuartpyoung
+package: s3lib
+repository: s3lib
+privacy: private
+source: git
+type: application
+version: 0.0.1
+website: https://atlassian-itmi.inova.org/confluence/display/BIOIN/itmi_s3lib

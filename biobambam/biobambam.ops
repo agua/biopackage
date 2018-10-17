@@ -1,0 +1,29 @@
+---
+authors:
+  - 'Tischler German'
+  - 'Leonard Steven'
+checkurl: 'false'
+dependencies:
+  -
+    package: libmaus
+    version: libmaus_0_0_108
+description: 'Tools for bam file processing'
+hubtype: github
+installtype: ops
+keywords:
+  - biobambam
+  - 'developer tools'
+  - tools
+  - 'file processing'
+owner: gt1
+package: biobambam
+publication:
+  journal: http://science-advisor.net/article/1306.0836
+  title: 'biobambam: tools for read pair collation based algorithms on BAM files'
+  year: '2013'
+repository: biobambam
+source: git
+type: application
+url: '#### NOT USED: https://github.com/gt1/biobambam.git'
+version: biobambam_0_0_129
+website: http://biobambam.sourceforge.net/

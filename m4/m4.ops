@@ -1,0 +1,21 @@
+---
+authors:
+  - 'Kernighan Brian'
+  - 'Ritchie Dennis'
+build: ''
+checkurl: 'false'
+description: 'Process macros in files to replace unquoted occurrences of symbolic names with corresponding string values'
+installtype: ops
+keywords:
+  - m4
+  - make
+licensefile: LICENSE
+package: m4
+publication: {}
+readmefile: README
+source: url
+type: application
+unzipped: m4-$version
+url: ftp://gnu.mirror.iweb.com/m4/m4-$version.tar.bz2
+version: 1.4.17
+website: http://en.wikipedia.org/wiki/M4_(computer_language)

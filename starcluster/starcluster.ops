@@ -1,0 +1,26 @@
+---
+ISA: {}
+acknowledgements: []
+authors:
+  - 'Riley J'
+citations: []
+description: "StarCluster is an open source cluster-computing toolkit  designed to automate and simplify the process of building, configuring, and managing clusters of virtual machines on Amazonâ\x80\x99s EC2 cloud. StarCluster allows anyone to easily create a cluster computing environment in the cloud suited for distributed and parallel computing applications and systems."
+installtype: ops
+keywords:
+  - clusters
+  - cloud
+  - computing
+  - automation
+  - MIT
+licensefile: LICENSE
+name: starcluster-0.92rc2
+organisation: []
+publication: {}
+readmefile: README
+resources: {}
+source: git
+type: application
+url: http://http://star.mit.edu/cluster
+version: 0.0.92-rc2
+versionfile: https://api.github.com/repos/agua/biorepository/agua/starcluster/STARCLUSTER-VERSION
+website: http://star.mit.edu/cluster
